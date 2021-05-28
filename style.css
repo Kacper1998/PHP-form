@@ -1,0 +1,10 @@
+body {
+    background-color: grey;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+p {
+    color: blue;
+    font-weight: bold;
+}

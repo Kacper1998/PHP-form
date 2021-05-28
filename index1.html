@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="validator1.js"></script>
+    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Zadanie rekrutacyjne</title>
+</head>
+<body>
+    
+<form action="insert1.php"  method="POST" name="myForm" onsubmit="return(validate());" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>
+
+    <p>
+        <label for="firstName">Imię:</label>
+        <input type="text" name="first_name" id="Name">
+    </p>
+    <p>
+        <label for="lastName">Nazwisko:</label>
+        <input type="text" name="last_name" id="lastName">
+    </p>
+    <p>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+    </p>
+    <p>
+        <label for="phone">Nr.telefonu:</label>
+        <input type="text" name="phone" id="phone">
+    </p>
+    <p>
+        <label for="message">Wiadomość:</label>
+        <input type="text" name="message" id="message">
+    </p>
+    <input type="submit" value="WYŚLIJ"><br><br>
+    <form method="post" action="export.php">  
+        <input type="submit" name="export" value="Pobierz plik CSV">
+   </form>  
+</form>
+</body>
+</html>
